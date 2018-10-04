@@ -1,0 +1,19 @@
+﻿<Window x:Class="M120Projekt.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:M120Projekt"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="589.761" Width="498.976" Background="#FFF01B1B">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="106*"/>
+            <ColumnDefinition Width="73*"/>
+            <ColumnDefinition Width="312*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.ColumnSpan="3" Background="White"/>
+        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
+    </Grid>
+</Window>
+ 

@@ -1,0 +1,34 @@
+﻿<Window x:Name="PlaylistListe" x:Class="M120Projekt.PL_Einzelansicht"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:M120Projekt"
+        mc:Ignorable="d"
+        Title="PL_Einzelansicht" Height="600" Width="500">
+    <Grid x:Name="GridPL">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="131*"/>
+            <ColumnDefinition Width="361*"/>
+        </Grid.ColumnDefinitions>
+        <Label HorizontalAlignment="Center" Content="Playlist1&#xD;&#xA;" Height="64" VerticalAlignment="Top" FontSize="36" Margin="35,0,187,0" Grid.Column="1"/>
+        <Label Content="Name der Playlist" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Width="170" FontSize="16" Grid.ColumnSpan="2"/>
+        <Label Content="Titel in dieser Playlist:" HorizontalAlignment="Left" Margin="10,192,0,0" VerticalAlignment="Top" Width="170" FontSize="16" Grid.ColumnSpan="2" Height="42"/>
+
+
+        <TextBox x:Name="txtNamePL" HorizontalAlignment="Left" Height="23" Margin="148,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173" FontSize="16" Grid.Column="1" TextChanged="txtNamePL_TextChanged"/>
+        <CheckBox HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,251,0,0" Height="30" Width="111" FontSize="18" Content="Lied"/>
+        <CheckBox Content="Lied" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="112" FontSize="18" Margin="10,286,0,0"/>
+        <CheckBox Content="Lied" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="112" FontSize="18" Margin="10,321,0,0"/>
+        <CheckBox Content="Lied" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="112" FontSize="18" Margin="10,357,0,0"/>
+        <CheckBox Content="Lied" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="112" FontSize="18" Margin="10,392,0,0"/>
+        <CheckBox Content="Lied" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="112" FontSize="18" Margin="10,457,0,0"/>
+        <CheckBox Content="Lied" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="112" FontSize="18" Margin="10,427,0,0"/>
+
+        <Button Content="Ausgewählte Titel aus PL entfernen" HorizontalAlignment="Left" VerticalAlignment="Top" Width="185" Grid.Column="1" Margin="54,192,0,0" Height="35"/>
+        <Button Content="Neuen Titel hinzufügen" HorizontalAlignment="Left" VerticalAlignment="Top" Width="114" Grid.Column="1" Margin="207,508,0,0" Height="31"/>
+        <Button Content="Abbrechen" HorizontalAlignment="Left" VerticalAlignment="Top" Width="114" Margin="17,508,0,0" Height="31"/>
+        <Button x:Name="btnSpeichern" Content="Speichern" HorizontalAlignment="Left" VerticalAlignment="Top" Width="114" Grid.Column="1" Margin="54,508,0,0" Height="31" IsEnabled="False"/>
+
+    </Grid>
+</Window>
